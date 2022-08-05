@@ -1,0 +1,66 @@
+
+buildscript {
+    repositories {
+
+        mavenLocal()
+        // Comment out the following line if in China
+        // maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        // jcenter()
+
+        mavenCentral()
+    }
+
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+
+group 'com.doublechaintech'
+version '1.0.0'
+
+
+
+
+[compileJava,compileTestJava,javadoc]*.options*.encoding = "UTF-8"
+[compileJava,compileTestJava]*.options*.compilerArgs = ["-parameters"]
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+sourceSets {
+    main {
+
+        java {   srcDirs =  ['app/src/main/java'];}
+        resources {srcDirs =  ['app/src/main/java'] }
+    }
+
+}
+
+repositories {
+    mavenLocal()
+    // Comment out the following line if in China
+    // maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    // jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'cn.hutool:hutool-all:5.7.10'
+    implementation group: 'xpp3', name: 'xpp3', version: '1.1.4c'
+    implementation 'commons-codec:commons-codec:1.15'
+}
+
+
+task singleJar(type: Jar) {
+    duplicatesStrategy = 'include'
+    manifest {
+        attributes 'Main-Class': 'com.doublechaintech.xmlmerger.XmlMerger'
+    }
+
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+

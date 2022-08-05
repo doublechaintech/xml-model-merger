@@ -9,3 +9,4 @@
 
 rootProject.name = 'xml-model-merger'
 include('app')
+

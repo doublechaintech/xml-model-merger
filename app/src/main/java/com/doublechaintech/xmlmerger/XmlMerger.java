@@ -1,5 +1,4 @@
 package com.doublechaintech.xmlmerger;
-import com.doublechaintech.util.FileUtils;
 
 import cn.hutool.core.io.FileUtil;
 import org.apache.commons.codec.Charsets;
