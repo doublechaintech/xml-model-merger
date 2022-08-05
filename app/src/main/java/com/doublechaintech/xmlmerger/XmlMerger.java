@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 public class XmlMerger {
 
-  static String PARSER_CLASS = "com.doublechaintech.util.CustomXmlParser";
+  static String PARSER_CLASS = "com.doublechaintech.xmlmerger.CustomXmlParser";
   protected static Map<String, Map<String, Long>> fileTimestamps = new HashMap<>();
 
   protected static final String ATTR_INDENT = "    ";
