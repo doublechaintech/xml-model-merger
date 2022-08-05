@@ -1,0 +1,2480 @@
+@warning job_order_weigh_record.ocr_datetime: word 'ocr' seems not found in library
+@warning object definition: iot_online_status: word 'iot' seems not found in library
+
+
+
+=================Execute Report (Model Time 190827T1449) @Tue Aug 27 15:45:38 CST 2019, 57 objects and 492 fields===========================
+
+
+
+ processing: platform
+
+
+ processing: merchant
+
+
+ processing: merchant.user.owner
+
+Info: Add virtual field [merchants(es)] to <user>
+	merchant.owner
+
+
+ processing: merchant.merchant_type.merchant_type
+
+Info: Add virtual field [merchants(es)] to <merchant_type>
+	merchant.merchant_type
+
+
+ processing: merchant.merchant_status.merchant_status
+
+Info: Add virtual field [merchants(es)] to <merchant_status>
+	merchant.merchant_status
+
+
+ processing: merchant.platform.platform
+
+Info: Add virtual field [merchants(es)] to <platform>
+	merchant.platform
+
+
+ processing: merchant_warehouse
+
+
+ processing: merchant_warehouse.merchant.merchant
+
+Info: Add virtual field [merchant_warehouses(es)] to <merchant>
+	merchant_warehouse.merchant
+
+
+ processing: user
+
+
+ processing: user.user_status.user_status
+
+Info: Add virtual field [users(es)] to <user_status>
+	user.user_status
+
+
+ processing: user.platform.platform
+
+Info: Add virtual field [users(es)] to <platform>
+	user.platform
+
+
+ processing: employee_assignment
+
+
+ processing: employee_assignment.user.user
+
+Info: Add virtual field [employee_assignments(es)] to <user>
+	employee_assignment.user
+
+
+ processing: employee_assignment.merchant.working_merchant
+
+Info: Add virtual field [employee_assignments(es)] to <merchant>
+	employee_assignment.working_merchant
+
+
+ processing: employee_assignment.merchant_warehouse.working_location
+
+Info: Add virtual field [employee_assignments(es)] to <merchant_warehouse>
+	employee_assignment.working_location
+
+
+ processing: employee_assignment.role.role
+
+Info: Add virtual field [employee_assignments(es)] to <role>
+	employee_assignment.role
+
+
+ processing: main_order
+
+
+ processing: main_order.merchant.buyer
+
+Info: Add virtual field [main_orders(es)] to <merchant>
+	main_order.buyer
+
+
+ processing: main_order.order_status.status
+
+Info: Add virtual field [main_orders(es)] to <order_status>
+	main_order.status
+
+
+ processing: main_order.platform.platform
+
+Info: Add virtual field [main_orders(es)] to <platform>
+	main_order.platform
+
+
+ processing: line_item
+
+
+ processing: line_item.main_order.main_order
+
+Info: Add virtual field [line_items(es)] to <main_order>
+	line_item.main_order
+
+
+ processing: line_item.merchant.seller
+
+Info: Add virtual field [line_items(es)] to <merchant>
+	line_item.seller
+
+
+ processing: job_order
+
+
+ processing: job_order.user.cargo_owner
+
+Info: Add virtual field [job_orders(es)] to <user>
+	job_order.cargo_owner
+
+
+ processing: job_order.product.product
+
+Info: Add virtual field [job_orders(es)] to <product>
+	job_order.product
+
+
+ processing: job_order.merchant_warehouse.buyer_warehouse
+
+Info: Add virtual field [job_orders(es)] to <merchant_warehouse>
+	job_order.buyer_warehouse
+
+
+ processing: job_order.job_order_status.status
+
+Info: Add virtual field [job_orders(es)] to <job_order_status>
+	job_order.status
+
+
+ processing: job_order.merchant_warehouse.cargo_source
+
+Info: Add virtual field [job_orders(es)] to <merchant_warehouse>
+	job_order.cargo_source
+
+
+ processing: job_order.line_item.line_item
+
+Info: Add virtual field [job_orders(es)] to <line_item>
+	job_order.line_item
+
+
+ processing: job_order_weigh_record
+
+
+ processing: job_order_weigh_record.weigh_type.weigh_type
+
+Info: Add virtual field [job_order_weigh_records(es)] to <weigh_type>
+	job_order_weigh_record.weigh_type
+
+
+ processing: job_order_weigh_record.user.executor
+
+Info: Add virtual field [job_order_weigh_records(es)] to <user>
+	job_order_weigh_record.executor
+
+
+ processing: job_order_weigh_record.merchant_warehouse.weigh_location
+
+Info: Add virtual field [job_order_weigh_records(es)] to <merchant_warehouse>
+	job_order_weigh_record.weigh_location
+
+
+ processing: job_order_weigh_record.smart_scale.weigh_scale
+
+Info: Add virtual field [job_order_weigh_records(es)] to <smart_scale>
+	job_order_weigh_record.weigh_scale
+
+
+ processing: job_order_weigh_record.job_order.job_order
+
+Info: Add virtual field [job_order_weigh_records(es)] to <job_order>
+	job_order_weigh_record.job_order
+
+
+ processing: payment
+
+
+ processing: payment.main_order.main_order
+
+Info: Add virtual field [payments(es)] to <main_order>
+	payment.main_order
+
+
+ processing: payment.payment_status.payment_status
+
+Info: Add virtual field [payments(es)] to <payment_status>
+	payment.payment_status
+
+
+ processing: payment.user.payer
+
+Info: Add virtual field [payments(es)] to <user>
+	payment.payer
+
+
+ processing: payment.user.recipient
+
+Info: Add virtual field [payments(es)] to <user>
+	payment.recipient
+
+
+ processing: category
+
+
+ processing: category.platform.platform
+
+Info: Add virtual field [categorys(es)] to <platform>
+	category.platform
+
+
+ processing: product
+
+
+ processing: product.category.category
+
+Info: Add virtual field [products(es)] to <category>
+	product.category
+
+
+ processing: product.merchant_warehouse.merchant_warehouse
+
+Info: Add virtual field [products(es)] to <merchant_warehouse>
+	product.merchant_warehouse
+
+
+ processing: product.product_type.product_type
+
+Info: Add virtual field [products(es)] to <product_type>
+	product.product_type
+
+
+ processing: product.platform.platform
+
+Info: Add virtual field [products(es)] to <platform>
+	product.platform
+
+
+ processing: inventory
+
+
+ processing: inventory.product.product
+
+Info: Add virtual field [inventorys(es)] to <product>
+	inventory.product
+
+
+ processing: inventory.merchant.merchant
+
+Info: Add virtual field [inventorys(es)] to <merchant>
+	inventory.merchant
+
+
+ processing: inventory.merchant_warehouse.warehouse
+
+Info: Add virtual field [inventorys(es)] to <merchant_warehouse>
+	inventory.warehouse
+
+
+ processing: inventory_record
+
+
+ processing: inventory_record.stock_type.stock_type
+
+Info: Add virtual field [inventory_records(es)] to <stock_type>
+	inventory_record.stock_type
+
+
+ processing: inventory_record.user.operator
+
+Info: Add virtual field [inventory_records(es)] to <user>
+	inventory_record.operator
+
+
+ processing: inventory_record.inventory.inventory
+
+Info: Add virtual field [inventory_records(es)] to <inventory>
+	inventory_record.inventory
+
+
+ processing: smart_scale
+
+
+ processing: smart_scale.merchant_warehouse.scale_location
+
+Info: Add virtual field [smart_scales(es)] to <merchant_warehouse>
+	smart_scale.scale_location
+
+
+ processing: smart_scale.iot_online_status.status
+
+Info: Add virtual field [smart_scales(es)] to <iot_online_status>
+	smart_scale.status
+
+
+ processing: smart_scale.platform.platform
+
+Info: Add virtual field [smart_scales(es)] to <platform>
+	smart_scale.platform
+
+
+ processing: merchant_partner
+
+
+ processing: merchant_partner.merchant.seller
+
+Info: Add virtual field [merchant_partners(es)] to <merchant>
+	merchant_partner.seller
+
+
+ processing: merchant_partner.merchant_warehouse.seller_warehouse
+
+Info: Add virtual field [merchant_partners(es)] to <merchant_warehouse>
+	merchant_partner.seller_warehouse
+
+
+ processing: merchant_partner.merchant.buyer
+
+Info: Add virtual field [merchant_partners(es)] to <merchant>
+	merchant_partner.buyer
+
+
+ processing: merchant_partner.merchant_warehouse.buyer_warehouse
+
+Info: Add virtual field [merchant_partners(es)] to <merchant_warehouse>
+	merchant_partner.buyer_warehouse
+
+
+ processing: job_order_next_step_info
+
+
+ processing: job_order_next_step_info.job_order.job_order
+
+Info: Add virtual field [job_order_next_step_infos(es)] to <job_order>
+	job_order_next_step_info.job_order
+
+
+ processing: job_order_next_step_info.merchant_warehouse.warehouse
+
+Info: Add virtual field [job_order_next_step_infos(es)] to <merchant_warehouse>
+	job_order_next_step_info.warehouse
+
+
+ processing: job_order_next_step_info.role.role
+
+Info: Add virtual field [job_order_next_step_infos(es)] to <role>
+	job_order_next_step_info.role
+
+
+ processing: job_order_next_step_info.user.handler
+
+Info: Add virtual field [job_order_next_step_infos(es)] to <user>
+	job_order_next_step_info.handler
+
+
+ processing: main_order_next_step_info
+
+
+ processing: main_order_next_step_info.main_order.main_order
+
+Info: Add virtual field [main_order_next_step_infos(es)] to <main_order>
+	main_order_next_step_info.main_order
+
+
+ processing: main_order_next_step_info.merchant_warehouse.warehouse
+
+Info: Add virtual field [main_order_next_step_infos(es)] to <merchant_warehouse>
+	main_order_next_step_info.warehouse
+
+
+ processing: main_order_next_step_info.role.role
+
+Info: Add virtual field [main_order_next_step_infos(es)] to <role>
+	main_order_next_step_info.role
+
+
+ processing: main_order_next_step_info.user.handler
+
+Info: Add virtual field [main_order_next_step_infos(es)] to <user>
+	main_order_next_step_info.handler
+
+
+ processing: common_event_record
+
+
+ processing: common_event_record.user.user
+
+Info: Add virtual field [common_event_records(es)] to <user>
+	common_event_record.user
+
+
+ processing: common_event_record.platform.platform
+
+Info: Add virtual field [common_event_records(es)] to <platform>
+	common_event_record.platform
+
+
+ processing: original_evidence_record
+
+
+ processing: original_evidence_record.payment.payment
+
+Info: Add virtual field [original_evidence_records(es)] to <payment>
+	original_evidence_record.payment
+
+
+ processing: current_working_warehouse
+
+
+ processing: current_working_warehouse.user.user
+
+Info: Add virtual field [current_working_warehouses(es)] to <user>
+	current_working_warehouse.user
+
+
+ processing: current_working_warehouse.merchant_warehouse.merchant_warehouse
+
+Info: Add virtual field [current_working_warehouses(es)] to <merchant_warehouse>
+	current_working_warehouse.merchant_warehouse
+
+
+ processing: merchant_warehouse_stakeholder
+
+
+ processing: merchant_warehouse_stakeholder.merchant_warehouse.merchant_warehouse
+
+Info: Add virtual field [merchant_warehouse_stakeholders(es)] to <merchant_warehouse>
+	merchant_warehouse_stakeholder.merchant_warehouse
+
+
+ processing: merchant_warehouse_stakeholder.user.owner
+
+Info: Add virtual field [merchant_warehouse_stakeholders(es)] to <user>
+	merchant_warehouse_stakeholder.owner
+
+
+ processing: stock_in_application
+
+
+ processing: stock_in_application.product.product
+
+Info: Add virtual field [stock_in_applications(es)] to <product>
+	stock_in_application.product
+
+
+ processing: stock_in_application.merchant_warehouse.warehouse
+
+Info: Add virtual field [stock_in_applications(es)] to <merchant_warehouse>
+	stock_in_application.warehouse
+
+
+ processing: stock_in_application.user.applicant
+
+Info: Add virtual field [stock_in_applications(es)] to <user>
+	stock_in_application.applicant
+
+
+ processing: stock_out_application
+
+
+ processing: stock_out_application.product.product
+
+Info: Add virtual field [stock_out_applications(es)] to <product>
+	stock_out_application.product
+
+
+ processing: stock_out_application.merchant_warehouse.warehouse
+
+Info: Add virtual field [stock_out_applications(es)] to <merchant_warehouse>
+	stock_out_application.warehouse
+
+
+ processing: stock_out_application.merchant.buyer
+
+Info: Add virtual field [stock_out_applications(es)] to <merchant>
+	stock_out_application.buyer
+
+
+ processing: stock_out_application.user.applicant
+
+Info: Add virtual field [stock_out_applications(es)] to <user>
+	stock_out_application.applicant
+
+
+ processing: sales_order
+
+
+ processing: sales_order.stock_out_application.stock_out
+
+Info: Add virtual field [sales_orders(es)] to <stock_out_application>
+	sales_order.stock_out
+
+
+ processing: main_order_price_info
+
+
+ processing: main_order_price_info.main_order.main_order
+
+Info: Add virtual field [main_order_price_infos(es)] to <main_order>
+	main_order_price_info.main_order
+
+
+ processing: job_order_operation_record
+
+
+ processing: job_order_operation_record.job_order.job_order
+
+Info: Add virtual field [job_order_operation_records(es)] to <job_order>
+	job_order_operation_record.job_order
+
+
+ processing: job_order_operation_record.common_event_record.source_event
+
+Info: Add virtual field [job_order_operation_records(es)] to <common_event_record>
+	job_order_operation_record.source_event
+
+
+ processing: main_order_shipping
+
+
+ processing: main_order_shipping.main_order.main_order
+
+Info: Add virtual field [main_order_shippings(es)] to <main_order>
+	main_order_shipping.main_order
+
+
+ processing: main_order_shipping.merchant_warehouse.ship_from
+
+Info: Add virtual field [main_order_shippings(es)] to <merchant_warehouse>
+	main_order_shipping.ship_from
+
+
+ processing: main_order_shipping.merchant_warehouse.ship_to
+
+Info: Add virtual field [main_order_shippings(es)] to <merchant_warehouse>
+	main_order_shipping.ship_to
+
+
+ processing: main_order_shipping.user.recipient_employee
+
+Info: Add virtual field [main_order_shippings(es)] to <user>
+	main_order_shipping.recipient_employee
+
+
+ processing: main_order_shipping.user.driver
+
+Info: Add virtual field [main_order_shippings(es)] to <user>
+	main_order_shipping.driver
+
+
+ processing: job_order_pricing
+
+
+ processing: job_order_pricing.pricing_type.pricing_type
+
+Info: Add virtual field [job_order_pricings(es)] to <pricing_type>
+	job_order_pricing.pricing_type
+
+
+ processing: job_order_pricing.job_order.job_order
+
+Info: Add virtual field [job_order_pricings(es)] to <job_order>
+	job_order_pricing.job_order
+
+
+ processing: job_order_pricing.user.pricing_employee
+
+Info: Add virtual field [job_order_pricings(es)] to <user>
+	job_order_pricing.pricing_employee
+
+
+ processing: user_status
+
+
+ processing: user_status.platform.platform
+
+Info: Add virtual field [user_statuss(es)] to <platform>
+	user_status.platform
+
+
+ processing: merchant_type
+
+
+ processing: merchant_type.platform.platform
+
+Info: Add virtual field [merchant_types(es)] to <platform>
+	merchant_type.platform
+
+
+ processing: merchant_status
+
+
+ processing: merchant_status.platform.platform
+
+Info: Add virtual field [merchant_statuss(es)] to <platform>
+	merchant_status.platform
+
+
+ processing: role
+
+
+ processing: role.platform.platform
+
+Info: Add virtual field [roles(es)] to <platform>
+	role.platform
+
+
+ processing: stock_type
+
+
+ processing: stock_type.platform.platform
+
+Info: Add virtual field [stock_types(es)] to <platform>
+	stock_type.platform
+
+
+ processing: product_type
+
+
+ processing: product_type.platform.platform
+
+Info: Add virtual field [product_types(es)] to <platform>
+	product_type.platform
+
+
+ processing: order_status
+
+
+ processing: order_status.platform.platform
+
+Info: Add virtual field [order_statuss(es)] to <platform>
+	order_status.platform
+
+
+ processing: job_order_status
+
+
+ processing: job_order_status.platform.platform
+
+Info: Add virtual field [job_order_statuss(es)] to <platform>
+	job_order_status.platform
+
+
+ processing: pricing_type
+
+
+ processing: pricing_type.platform.platform
+
+Info: Add virtual field [pricing_types(es)] to <platform>
+	pricing_type.platform
+
+
+ processing: weigh_type
+
+
+ processing: weigh_type.platform.platform
+
+Info: Add virtual field [weigh_types(es)] to <platform>
+	weigh_type.platform
+
+
+ processing: iot_online_status
+
+
+ processing: iot_online_status.platform.platform
+
+Info: Add virtual field [iot_online_statuss(es)] to <platform>
+	iot_online_status.platform
+
+
+ processing: payment_status
+
+
+ processing: payment_status.platform.platform
+
+Info: Add virtual field [payment_statuss(es)] to <platform>
+	payment_status.platform
+
+
+ processing: payment_option
+
+
+ processing: payment_option.platform.platform
+
+Info: Add virtual field [payment_options(es)] to <platform>
+	payment_option.platform
+
+
+**************************************************
+
+platform{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('小黄龙智慧供应链系统'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(20){
+		merchantList	platform(商户管理)--platform;
+		userList	platform(员工管理)--platform;
+		mainOrderList	platform(交易管理)--platform;
+		categoryList	platform(仓库管理)--platform;
+		productList	platform(仓库管理)--platform;
+		smartScaleList	platform(智能秤管理)--platform;
+		commonEventRecordList	platform(__no_group)--platform;
+		userStatusList	platform(__no_group)--platform;
+		merchantTypeList	platform(__no_group)--platform;
+		merchantStatusList	platform(__no_group)--platform;
+		roleList	platform(__no_group)--platform;
+		stockTypeList	platform(__no_group)--platform;
+		productTypeList	platform(__no_group)--platform;
+		orderStatusList	platform(__no_group)--platform;
+		jobOrderStatusList	platform(__no_group)--platform;
+		pricingTypeList	platform(__no_group)--platform;
+		weighTypeList	platform(__no_group)--platform;
+		iotOnlineStatusList	platform(__no_group)--platform;
+		paymentStatusList	platform(__no_group)--platform;
+		paymentOptionList	platform(__no_group)--platform;
+	}
+} depth=0; isRoot = true
+
+merchant{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('四川浩睿永多再生物资回收有限公司'), verb: false, required: true;
+		user	owner('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		merchant_type	merchant_type('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		merchant_status	merchant_status('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(8){
+		merchantWarehouseList	merchant(商户管理)--merchant;
+		employeeAssignmentList	working_merchant(员工管理)--working_merchant;
+		mainOrderList	buyer(交易管理)--buyer;
+		lineItemList	seller(交易管理)--seller;
+		inventoryList	merchant(仓库管理)--merchant;
+		merchantPartnerListAsSeller	seller(商户管理)--seller;
+		merchantPartnerListAsBuyer	buyer(商户管理)--seller;
+		stockOutApplicationList	buyer(__no_group)--buyer;
+	}
+} depth=3; isRoot = false
+
+merchant_warehouse{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('金泉路打包厂'), verb: false, required: true;
+		string	address('四川省成都市高新区南华路100号'), verb: false, required: true;
+		merchant	merchant('$(object)'), verb: false, required: true, referenceBy: merchantWarehouseList;
+		double	latitude('30.31251'), verb: false, required: true;
+		double	longitude('104.02931'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(17){
+		employeeAssignmentList	working_location(员工管理)--working_location;
+		jobOrderListAsBuyerWarehouse	buyer_warehouse(交易管理)--buyer_warehouse;
+		jobOrderListAsCargoSource	cargo_source(交易管理)--buyer_warehouse;
+		jobOrderWeighRecordList	weigh_location(交易管理)--weigh_location;
+		productList	merchant_warehouse(仓库管理)--merchant_warehouse;
+		inventoryList	warehouse(仓库管理)--warehouse;
+		smartScaleList	scale_location(智能秤管理)--scale_location;
+		merchantPartnerListAsSellerWarehouse	seller_warehouse(商户管理)--seller_warehouse;
+		merchantPartnerListAsBuyerWarehouse	buyer_warehouse(商户管理)--seller_warehouse;
+		jobOrderNextStepInfoList	warehouse(__no_group)--warehouse;
+		mainOrderNextStepInfoList	warehouse(__no_group)--warehouse;
+		currentWorkingWarehouseList	merchant_warehouse(__no_group)--merchant_warehouse;
+		merchantWarehouseStakeholderList	merchant_warehouse(__no_group)--merchant_warehouse;
+		stockInApplicationList	warehouse(__no_group)--warehouse;
+		stockOutApplicationList	warehouse(__no_group)--warehouse;
+		mainOrderShippingListAsShipFrom	ship_from(__no_group)--ship_from;
+		mainOrderShippingListAsShipTo	ship_to(__no_group)--ship_from;
+	}
+} depth=4; isRoot = false
+
+user{
+	fields(12){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('张三'), verb: false, required: true;
+		string_china_mobile_phone	mobile('13812341234'), verb: false, required: true;
+		string_image	avatar_image('avatar.jpg'), verb: false, required: true;
+		user_status	user_status('$(object)'), verb: false, required: true, referenceBy: userList;
+		string	weixin_openid('wx123456789abcdefghijklmn'), verb: false, required: true;
+		string	weixin_appid('wxapp12098410239840'), verb: false, required: true;
+		string	access_token('jwt_token_12345678'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: userList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(17){
+		merchantList	owner(商户管理)--owner;
+		employeeAssignmentList	user(员工管理)--user;
+		jobOrderList	cargo_owner(交易管理)--cargo_owner;
+		jobOrderWeighRecordList	executor(交易管理)--executor;
+		paymentListAsPayer	payer(交易管理)--payer;
+		paymentListAsRecipient	recipient(交易管理)--payer;
+		inventoryRecordList	operator(仓库管理)--operator;
+		jobOrderNextStepInfoList	handler(__no_group)--handler;
+		mainOrderNextStepInfoList	handler(__no_group)--handler;
+		commonEventRecordList	user(__no_group)--user;
+		currentWorkingWarehouseList	user(__no_group)--user;
+		merchantWarehouseStakeholderList	owner(__no_group)--owner;
+		stockInApplicationList	applicant(__no_group)--applicant;
+		stockOutApplicationList	applicant(__no_group)--applicant;
+		mainOrderShippingListAsRecipientEmployee	recipient_employee(__no_group)--recipient_employee;
+		mainOrderShippingListAsDriver	driver(__no_group)--recipient_employee;
+		jobOrderPricingList	pricing_employee(__no_group)--pricing_employee;
+	}
+} depth=2; isRoot = false
+
+employee_assignment{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		user	user('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		merchant	working_merchant('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		merchant_warehouse	working_location('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		date	start_date('2099-06-16'), verb: false, required: true;
+		date	end_date('2099-09-18'), verb: false, required: true;
+		role	role('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+main_order{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('订单名字'), verb: false, required: true;
+		merchant	buyer('$(object)'), verb: false, required: true, referenceBy: mainOrderList;
+		order_status	status('$(object)'), verb: false, required: true, referenceBy: mainOrderList;
+		string	scene_code('buy_in'), verb: false, required: true;
+		money	total_amount('$103000000.005'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: mainOrderList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(5){
+		lineItemList	main_order(__no_group)--main_order;
+		paymentList	main_order(__no_group)--main_order;
+		mainOrderNextStepInfoList	main_order(__no_group)--main_order;
+		mainOrderPriceInfoList	main_order(__no_group)--main_order;
+		mainOrderShippingList	main_order(__no_group)--main_order;
+	}
+} depth=4; isRoot = false
+
+line_item{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('综合纸-A类-原料'), verb: false, required: true;
+		money	unit_price('$10300.005'), verb: false, required: true;
+		double	quantity('200000000.000'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: lineItemList;
+		merchant	seller('$(object)'), verb: false, required: true, referenceBy: lineItemList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderList	line_item(__no_group)--line_item;
+	}
+} depth=5; isRoot = false
+
+job_order{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		user	cargo_owner('$(object)'), verb: false, required: true, referenceBy: jobOrderList;
+		product	product('$(object)'), verb: false, required: false, referenceBy: jobOrderList;
+		double	gross_weight('200000000.000'), verb: false, required: true;
+		double	tare_weight('200000000.000'), verb: false, required: true;
+		double	adjust_weight('-99999999.000'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		string	description('订单辅助描述信息'), verb: false, required: true;
+		merchant_warehouse	buyer_warehouse('$(object)'), verb: false, required: true, referenceBy: jobOrderListAsBuyerWarehouse;
+		date_time	tare_weight_datetime('2099-12-31T23:22:22'), verb: false, required: true;
+		date_time	gross_weight_datetime('2099-12-31T22:22:22'), verb: false, required: true;
+		job_order_status	status('$(object)'), verb: false, required: true, referenceBy: jobOrderList;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		merchant_warehouse	cargo_source('$(object)'), verb: false, required: true, referenceBy: jobOrderListAsCargoSource;
+		line_item	line_item('$(object)'), verb: false, required: true, referenceBy: jobOrderList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(4){
+		jobOrderWeighRecordList	job_order(__no_group)--job_order;
+		jobOrderNextStepInfoList	job_order(__no_group)--job_order;
+		jobOrderOperationRecordList	job_order(__no_group)--job_order;
+		jobOrderPricingList	job_order(__no_group)--job_order;
+	}
+} depth=6; isRoot = false
+
+job_order_weigh_record{
+	fields(17){
+		string	id('ABCD'), verb: false, required: true;
+		double	weigh_value('200000000.000'), verb: false, required: true;
+		date_time	weigh_datetime('2099-12-31T22:22:22'), verb: false, required: true;
+		weigh_type	weigh_type('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		string	plate_number('川AFCD234|川AFD234'), verb: false, required: true;
+		user	executor('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		merchant_warehouse	weigh_location('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		smart_scale	weigh_scale('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		date_time	ocr_datetime('2100-01-01T12:30:00'), verb: false, required: true;
+		string	ocr_result('川AFCD234|川AFD234'), verb: false, required: true;
+		string_image	ocr_image('image.jpg'), verb: false, required: true;
+		string_image	front_camera_image('image.jpg'), verb: false, required: true;
+		string_image	top_camera_image('image.jpg'), verb: false, required: true;
+		string_image	back_camera_image('image.jpg'), verb: false, required: true;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+payment{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: paymentList;
+		money	cash_amount('$200000.00'), verb: false, required: true;
+		date_time	paid_time('2099-06-18T22:22:22'), verb: false, required: true;
+		payment_status	payment_status('$(object)'), verb: false, required: true, referenceBy: paymentList;
+		user	payer('$(object)'), verb: false, required: true, referenceBy: paymentListAsPayer;
+		user	recipient('$(object)'), verb: false, required: true, referenceBy: paymentListAsRecipient;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		originalEvidenceRecordList	payment(__no_group)--payment;
+	}
+} depth=5; isRoot = false
+
+category{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('纸类|金属|塑料|木材|橡胶'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: categoryList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		productList	category(__no_group)--category;
+	}
+} depth=1; isRoot = false
+
+product{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('综合纸-A类-原料'), verb: false, required: true;
+		money	purchase_price('$100.414'), verb: false, required: true;
+		category	category('$(object)'), verb: false, required: true, referenceBy: productList;
+		merchant_warehouse	merchant_warehouse('$(object)'), verb: false, required: true, referenceBy: productList;
+		product_type	product_type('$(object)'), verb: false, required: true, referenceBy: productList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: productList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(4){
+		jobOrderList	product(__no_group)--product;
+		inventoryList	product(__no_group)--product;
+		stockInApplicationList	product(__no_group)--product;
+		stockOutApplicationList	product(__no_group)--product;
+	}
+} depth=5; isRoot = false
+
+inventory{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		product	product('$(object)'), verb: false, required: true, referenceBy: inventoryList;
+		merchant	merchant('$(object)'), verb: false, required: true, referenceBy: inventoryList;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: true, referenceBy: inventoryList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		inventoryRecordList	inventory(__no_group)--inventory;
+	}
+} depth=6; isRoot = false
+
+inventory_record{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('收购'), verb: false, required: true;
+		stock_type	stock_type('$(object)'), verb: false, required: true, referenceBy: inventoryRecordList;
+		user	operator('$(object)'), verb: false, required: true, referenceBy: inventoryRecordList;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		string	comments('出库备注'), verb: false, required: true;
+		inventory	inventory('$(object)'), verb: false, required: true, referenceBy: inventoryRecordList;
+		int	item_quantity_balance('10'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		string	refered_object_type('|buy-in-order'), verb: false, required: false;
+		string	refered_object_id('MO000001'), verb: false, required: true;
+		string_longtext	details('text()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+smart_scale{
+	fields(12){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('10吨地磅'), verb: false, required: true;
+		string	vendor('柯力'), verb: false, required: true;
+		string	type('D2008'), verb: false, required: true;
+		double	max_weight('200000000.000'), verb: false, required: true;
+		double	precision_weight('200000000.000'), verb: false, required: true;
+		merchant_warehouse	scale_location('$(object)'), verb: false, required: true, referenceBy: smartScaleList;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		iot_online_status	status('$(object)'), verb: false, required: true, referenceBy: smartScaleList;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: smartScaleList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderWeighRecordList	weigh_scale(__no_group)--weigh_scale;
+	}
+} depth=5; isRoot = false
+
+merchant_partner{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		string	seller_merchant_name('卖方商户名称'), verb: false, required: true;
+		string_china_mobile_phone	seller_mobile('13812341234'), verb: false, required: true;
+		string	seller_user_name('卖方联系人姓名'), verb: false, required: true;
+		string	buyer_merchant_name('买方商户名称'), verb: false, required: true;
+		string_china_mobile_phone	buyer_mobile('13812341234'), verb: false, required: true;
+		string	buyer_user_name('买方联系人姓名'), verb: false, required: true;
+		double	total_weight('200000000.000'), verb: false, required: true;
+		money	total_amount('$103000000.005'), verb: false, required: true;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		merchant	seller('$(object)'), verb: false, required: true, referenceBy: merchantPartnerListAsSeller;
+		merchant_warehouse	seller_warehouse('$(object)'), verb: false, required: false, referenceBy: merchantPartnerListAsSellerWarehouse;
+		merchant	buyer('$(object)'), verb: false, required: true, referenceBy: merchantPartnerListAsBuyer;
+		merchant_warehouse	buyer_warehouse('$(object)'), verb: false, required: false, referenceBy: merchantPartnerListAsBuyerWarehouse;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+job_order_next_step_info{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderNextStepInfoList;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: false, referenceBy: jobOrderNextStepInfoList;
+		role	role('$(object)'), verb: false, required: false, referenceBy: jobOrderNextStepInfoList;
+		user	handler('$(object)'), verb: false, required: false, referenceBy: jobOrderNextStepInfoList;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+main_order_next_step_info{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: mainOrderNextStepInfoList;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: false, referenceBy: mainOrderNextStepInfoList;
+		role	role('$(object)'), verb: false, required: false, referenceBy: mainOrderNextStepInfoList;
+		user	handler('$(object)'), verb: false, required: false, referenceBy: mainOrderNextStepInfoList;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+common_event_record{
+	fields(11){
+		string	id('ABCD'), verb: false, required: true;
+		string	event_code('confirm_weight|order_closed'), verb: false, required: true;
+		string	title('核重完成|订单完成'), verb: false, required: true;
+		user	user('$(object)'), verb: false, required: false, referenceBy: commonEventRecordList;
+		string	key1('川A234w3'), verb: false, required: true;
+		string	key2('200.99KG'), verb: false, required: true;
+		string	key3('+8618865676543'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		string_longtext	details('text()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: commonEventRecordList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderOperationRecordList	source_event(__no_group)--source_event;
+	}
+} depth=3; isRoot = false
+
+original_evidence_record{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('定额发票|电子发票'), verb: false, required: true;
+		string	summary('工商银行电子汇票截图'), verb: false, required: true;
+		string_image	image_1('example.jpg'), verb: false, required: true;
+		string_image	image_2('example.jpg'), verb: false, required: true;
+		string_image	image_3('example.jpg'), verb: false, required: true;
+		payment	payment('$(object)'), verb: true, required: true, referenceBy: originalEvidenceRecordList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		string	current_status('PAID'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=6; isRoot = false
+
+current_working_warehouse{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		user	user('$(object)'), verb: false, required: true, referenceBy: currentWorkingWarehouseList;
+		merchant_warehouse	merchant_warehouse('$(object)'), verb: false, required: true, referenceBy: currentWorkingWarehouseList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+merchant_warehouse_stakeholder{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		merchant_warehouse	merchant_warehouse('$(object)'), verb: false, required: true, referenceBy: merchantWarehouseStakeholderList;
+		user	owner('$(object)'), verb: false, required: true, referenceBy: merchantWarehouseStakeholderList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+stock_in_application{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		product	product('$(object)'), verb: false, required: true, referenceBy: stockInApplicationList;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: true, referenceBy: stockInApplicationList;
+		user	applicant('$(object)'), verb: false, required: true, referenceBy: stockInApplicationList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=6; isRoot = false
+
+stock_out_application{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		product	product('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		string	comments('出库批注'), verb: false, required: true;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		merchant	buyer('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		string	vehicle('川AFCD234'), verb: false, required: true;
+		date_time	stock_out_datetime('2100-01-01T12:30:00'), verb: false, required: true;
+		user	applicant('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		string	driver_name('张小平'), verb: false, required: true;
+		string_china_mobile_phone	driver_mobile('13308188512'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		salesOrderList	stock_out(__no_group)--stock_out;
+	}
+} depth=6; isRoot = false
+
+sales_order{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		stock_out_application	stock_out('$(object)'), verb: false, required: true, referenceBy: salesOrderList;
+		string	product('产品名称'), verb: false, required: true;
+		string	buyer('买家名称'), verb: false, required: true;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		money	unit_price('$103000000.005'), verb: false, required: true;
+		money	shipping_cost('$103000000.005'), verb: false, required: true;
+		int	adjust_weight('10'), verb: false, required: true;
+		money	account_receivable_amount('$103000000.005'), verb: false, required: true;
+		money	account_received_amount('$103000000.005'), verb: false, required: true;
+		bool	is_order_paid('false'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		string	comments('备注'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+main_order_price_info{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('货款'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		bool	discount('true|false'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: mainOrderPriceInfoList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+job_order_operation_record{
+	fields(7){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('创建'), verb: false, required: true;
+		string_longtext	details('text()'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderOperationRecordList;
+		common_event_record	source_event('$(object)'), verb: false, required: true, referenceBy: jobOrderOperationRecordList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+main_order_shipping{
+	fields(11){
+		string	id('ABCD'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingList;
+		merchant_warehouse	ship_from('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsShipFrom;
+		merchant_warehouse	ship_to('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsShipTo;
+		user	recipient_employee('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsRecipientEmployee;
+		user	driver('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsDriver;
+		string	plate_number('川AFCD234'), verb: false, required: true;
+		double	shipping_cost('200000000.000'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+job_order_pricing{
+	fields(15){
+		string	id('ABCD'), verb: false, required: true;
+		string	pricing_comment('价格批注'), verb: false, required: true;
+		pricing_type	pricing_type('$(object)'), verb: false, required: true, referenceBy: jobOrderPricingList;
+		double	net_weight('200000000.000'), verb: false, required: true;
+		double	adjust_weight('-99999999.000'), verb: false, required: true;
+		double	final_weight('200000000.000'), verb: false, required: true;
+		money	unit_price('$10300.005'), verb: false, required: true;
+		money	adjust_price('$103000000.005'), verb: false, required: true;
+		money	final_price('$103000000.005'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderPricingList;
+		user	pricing_employee('$(object)'), verb: false, required: true, referenceBy: jobOrderPricingList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+user_status{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('正常|关闭'), verb: false, required: true;
+		string	code('normal|closed'), verb: false, required: true;
+		string	description('正常|关闭'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: userStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		userList	user_status(__no_group)--user_status;
+	}
+} depth=1; isRoot = false
+
+merchant_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('回收站|打包厂|上游客户|司机'), verb: false, required: true;
+		string	code('RecycleStation|PacakgingFactory|UpperCustomer|Driver'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: merchantTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		merchantList	merchant_type(__no_group)--merchant_type;
+	}
+} depth=1; isRoot = false
+
+merchant_status{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('营业中|已关闭|已停运'), verb: false, required: true;
+		string	code('running|closed|terminated'), verb: false, required: true;
+		string	description('正常营业中|暂时停止营业,例如下班或者假期|终止运营,例如合同到期,倒闭,被封等'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: merchantStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		merchantList	merchant_status(__no_group)--merchant_status;
+	}
+} depth=1; isRoot = false
+
+role{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('定价员|核价员|称重员|财务|站长'), verb: false, required: true;
+		string	code('PriceMaker|PriceAuditor|Weigh|Finance|StationHeader'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: roleList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(3){
+		employeeAssignmentList	role(__no_group)--role;
+		jobOrderNextStepInfoList	role(__no_group)--role;
+		mainOrderNextStepInfoList	role(__no_group)--role;
+	}
+} depth=1; isRoot = false
+
+stock_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('入库|出库'), verb: false, required: true;
+		string	code('StockIn|StockOut'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: stockTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		inventoryRecordList	stock_type(__no_group)--stock_type;
+	}
+} depth=1; isRoot = false
+
+product_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('原料|成品'), verb: false, required: true;
+		string	code('Material|Goods'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: productTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		productList	product_type(__no_group)--product_type;
+	}
+} depth=1; isRoot = false
+
+order_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('处理中|待支付|支付中|已完成|已取消'), verb: false, required: true;
+		string	code('NotReady|PendingPay|Paying|Completed|Cancelled'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: orderStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		mainOrderList	status(__no_group)--status;
+	}
+} depth=1; isRoot = false
+
+job_order_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('待称毛重|待确认毛重|待卸货|待称皮重|待确认皮重|待定价|待确认|已完成|已取消'), verb: false, required: true;
+		string	code('NeedGrossWeight|NeedConfirmGrossWeight|NeedUnload|NeedTareWeight|NeedConfirmTareWeight|NeedPricing|NeedConfirm|Closed|Cancelled'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: jobOrderStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderList	status(__no_group)--status;
+	}
+} depth=1; isRoot = false
+
+pricing_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('定价|核价'), verb: false, required: true;
+		string	code('PriceMake|PriceAudit'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: pricingTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderPricingList	pricing_type(__no_group)--pricing_type;
+	}
+} depth=1; isRoot = false
+
+weigh_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('称毛重|称皮重'), verb: false, required: true;
+		string	code('GrossWeight|TareWeight'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: weighTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderWeighRecordList	weigh_type(__no_group)--weigh_type;
+	}
+} depth=1; isRoot = false
+
+iot_online_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('离线|在线'), verb: false, required: true;
+		string	code('offline|online'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: iotOnlineStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		smartScaleList	status(__no_group)--status;
+	}
+} depth=1; isRoot = false
+
+payment_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('待支付|支付中|已支付|已取消|已失败|已冻结'), verb: false, required: true;
+		string	code('UnPaid|Paying|Paid|Cancelled|Failed|Frozen'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: paymentStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		paymentList	payment_status(__no_group)--payment_status;
+	}
+} depth=1; isRoot = false
+
+payment_option{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('余额|微信APP|微信WEB|微信扫码|支付宝|银联'), verb: false, required: true;
+		string	code('Balance|WechatApp|WechatWeb|WechatNative|AliPay|UnionPay'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: paymentOptionList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+platform{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('小黄龙智慧供应链系统'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(20){
+		merchantList	platform(商户管理)--platform;
+		userList	platform(员工管理)--platform;
+		mainOrderList	platform(交易管理)--platform;
+		categoryList	platform(仓库管理)--platform;
+		productList	platform(仓库管理)--platform;
+		smartScaleList	platform(智能秤管理)--platform;
+		commonEventRecordList	platform(__no_group)--platform;
+		userStatusList	platform(__no_group)--platform;
+		merchantTypeList	platform(__no_group)--platform;
+		merchantStatusList	platform(__no_group)--platform;
+		roleList	platform(__no_group)--platform;
+		stockTypeList	platform(__no_group)--platform;
+		productTypeList	platform(__no_group)--platform;
+		orderStatusList	platform(__no_group)--platform;
+		jobOrderStatusList	platform(__no_group)--platform;
+		pricingTypeList	platform(__no_group)--platform;
+		weighTypeList	platform(__no_group)--platform;
+		iotOnlineStatusList	platform(__no_group)--platform;
+		paymentStatusList	platform(__no_group)--platform;
+		paymentOptionList	platform(__no_group)--platform;
+	}
+} depth=0; isRoot = true
+
+merchant{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('四川浩睿永多再生物资回收有限公司'), verb: false, required: true;
+		user	owner('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		merchant_type	merchant_type('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		merchant_status	merchant_status('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: merchantList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(8){
+		merchantWarehouseList	merchant(商户管理)--merchant;
+		employeeAssignmentList	working_merchant(员工管理)--working_merchant;
+		mainOrderList	buyer(交易管理)--buyer;
+		lineItemList	seller(交易管理)--seller;
+		inventoryList	merchant(仓库管理)--merchant;
+		merchantPartnerListAsSeller	seller(商户管理)--seller;
+		merchantPartnerListAsBuyer	buyer(商户管理)--seller;
+		stockOutApplicationList	buyer(__no_group)--buyer;
+	}
+} depth=3; isRoot = false
+
+merchant_warehouse{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('金泉路打包厂'), verb: false, required: true;
+		string	address('四川省成都市高新区南华路100号'), verb: false, required: true;
+		merchant	merchant('$(object)'), verb: false, required: true, referenceBy: merchantWarehouseList;
+		double	latitude('30.31251'), verb: false, required: true;
+		double	longitude('104.02931'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(17){
+		employeeAssignmentList	working_location(员工管理)--working_location;
+		jobOrderListAsBuyerWarehouse	buyer_warehouse(交易管理)--buyer_warehouse;
+		jobOrderListAsCargoSource	cargo_source(交易管理)--buyer_warehouse;
+		jobOrderWeighRecordList	weigh_location(交易管理)--weigh_location;
+		productList	merchant_warehouse(仓库管理)--merchant_warehouse;
+		inventoryList	warehouse(仓库管理)--warehouse;
+		smartScaleList	scale_location(智能秤管理)--scale_location;
+		merchantPartnerListAsSellerWarehouse	seller_warehouse(商户管理)--seller_warehouse;
+		merchantPartnerListAsBuyerWarehouse	buyer_warehouse(商户管理)--seller_warehouse;
+		jobOrderNextStepInfoList	warehouse(__no_group)--warehouse;
+		mainOrderNextStepInfoList	warehouse(__no_group)--warehouse;
+		currentWorkingWarehouseList	merchant_warehouse(__no_group)--merchant_warehouse;
+		merchantWarehouseStakeholderList	merchant_warehouse(__no_group)--merchant_warehouse;
+		stockInApplicationList	warehouse(__no_group)--warehouse;
+		stockOutApplicationList	warehouse(__no_group)--warehouse;
+		mainOrderShippingListAsShipFrom	ship_from(__no_group)--ship_from;
+		mainOrderShippingListAsShipTo	ship_to(__no_group)--ship_from;
+	}
+} depth=4; isRoot = false
+
+user{
+	fields(12){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('张三'), verb: false, required: true;
+		string_china_mobile_phone	mobile('13812341234'), verb: false, required: true;
+		string_image	avatar_image('avatar.jpg'), verb: false, required: true;
+		user_status	user_status('$(object)'), verb: false, required: true, referenceBy: userList;
+		string	weixin_openid('wx123456789abcdefghijklmn'), verb: false, required: true;
+		string	weixin_appid('wxapp12098410239840'), verb: false, required: true;
+		string	access_token('jwt_token_12345678'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: userList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(17){
+		merchantList	owner(商户管理)--owner;
+		employeeAssignmentList	user(员工管理)--user;
+		jobOrderList	cargo_owner(交易管理)--cargo_owner;
+		jobOrderWeighRecordList	executor(交易管理)--executor;
+		paymentListAsPayer	payer(交易管理)--payer;
+		paymentListAsRecipient	recipient(交易管理)--payer;
+		inventoryRecordList	operator(仓库管理)--operator;
+		jobOrderNextStepInfoList	handler(__no_group)--handler;
+		mainOrderNextStepInfoList	handler(__no_group)--handler;
+		commonEventRecordList	user(__no_group)--user;
+		currentWorkingWarehouseList	user(__no_group)--user;
+		merchantWarehouseStakeholderList	owner(__no_group)--owner;
+		stockInApplicationList	applicant(__no_group)--applicant;
+		stockOutApplicationList	applicant(__no_group)--applicant;
+		mainOrderShippingListAsRecipientEmployee	recipient_employee(__no_group)--recipient_employee;
+		mainOrderShippingListAsDriver	driver(__no_group)--recipient_employee;
+		jobOrderPricingList	pricing_employee(__no_group)--pricing_employee;
+	}
+} depth=2; isRoot = false
+
+employee_assignment{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		user	user('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		merchant	working_merchant('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		merchant_warehouse	working_location('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		date	start_date('2099-06-16'), verb: false, required: true;
+		date	end_date('2099-09-18'), verb: false, required: true;
+		role	role('$(object)'), verb: false, required: true, referenceBy: employeeAssignmentList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+main_order{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('订单名字'), verb: false, required: true;
+		merchant	buyer('$(object)'), verb: false, required: true, referenceBy: mainOrderList;
+		order_status	status('$(object)'), verb: false, required: true, referenceBy: mainOrderList;
+		string	scene_code('buy_in'), verb: false, required: true;
+		money	total_amount('$103000000.005'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: mainOrderList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(5){
+		lineItemList	main_order(__no_group)--main_order;
+		paymentList	main_order(__no_group)--main_order;
+		mainOrderNextStepInfoList	main_order(__no_group)--main_order;
+		mainOrderPriceInfoList	main_order(__no_group)--main_order;
+		mainOrderShippingList	main_order(__no_group)--main_order;
+	}
+} depth=4; isRoot = false
+
+line_item{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('综合纸-A类-原料'), verb: false, required: true;
+		money	unit_price('$10300.005'), verb: false, required: true;
+		double	quantity('200000000.000'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: lineItemList;
+		merchant	seller('$(object)'), verb: false, required: true, referenceBy: lineItemList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderList	line_item(__no_group)--line_item;
+	}
+} depth=5; isRoot = false
+
+job_order{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		user	cargo_owner('$(object)'), verb: false, required: true, referenceBy: jobOrderList;
+		product	product('$(object)'), verb: false, required: false, referenceBy: jobOrderList;
+		double	gross_weight('200000000.000'), verb: false, required: true;
+		double	tare_weight('200000000.000'), verb: false, required: true;
+		double	adjust_weight('-99999999.000'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		string	description('订单辅助描述信息'), verb: false, required: true;
+		merchant_warehouse	buyer_warehouse('$(object)'), verb: false, required: true, referenceBy: jobOrderListAsBuyerWarehouse;
+		date_time	tare_weight_datetime('2099-12-31T23:22:22'), verb: false, required: true;
+		date_time	gross_weight_datetime('2099-12-31T22:22:22'), verb: false, required: true;
+		job_order_status	status('$(object)'), verb: false, required: true, referenceBy: jobOrderList;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		merchant_warehouse	cargo_source('$(object)'), verb: false, required: true, referenceBy: jobOrderListAsCargoSource;
+		line_item	line_item('$(object)'), verb: false, required: true, referenceBy: jobOrderList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(4){
+		jobOrderWeighRecordList	job_order(__no_group)--job_order;
+		jobOrderNextStepInfoList	job_order(__no_group)--job_order;
+		jobOrderOperationRecordList	job_order(__no_group)--job_order;
+		jobOrderPricingList	job_order(__no_group)--job_order;
+	}
+} depth=6; isRoot = false
+
+job_order_weigh_record{
+	fields(17){
+		string	id('ABCD'), verb: false, required: true;
+		double	weigh_value('200000000.000'), verb: false, required: true;
+		date_time	weigh_datetime('2099-12-31T22:22:22'), verb: false, required: true;
+		weigh_type	weigh_type('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		string	plate_number('川AFCD234|川AFD234'), verb: false, required: true;
+		user	executor('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		merchant_warehouse	weigh_location('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		smart_scale	weigh_scale('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		date_time	ocr_datetime('2100-01-01T12:30:00'), verb: false, required: true;
+		string	ocr_result('川AFCD234|川AFD234'), verb: false, required: true;
+		string_image	ocr_image('image.jpg'), verb: false, required: true;
+		string_image	front_camera_image('image.jpg'), verb: false, required: true;
+		string_image	top_camera_image('image.jpg'), verb: false, required: true;
+		string_image	back_camera_image('image.jpg'), verb: false, required: true;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderWeighRecordList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+payment{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: paymentList;
+		money	cash_amount('$200000.00'), verb: false, required: true;
+		date_time	paid_time('2099-06-18T22:22:22'), verb: false, required: true;
+		payment_status	payment_status('$(object)'), verb: false, required: true, referenceBy: paymentList;
+		user	payer('$(object)'), verb: false, required: true, referenceBy: paymentListAsPayer;
+		user	recipient('$(object)'), verb: false, required: true, referenceBy: paymentListAsRecipient;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		originalEvidenceRecordList	payment(__no_group)--payment;
+	}
+} depth=5; isRoot = false
+
+category{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('纸类|金属|塑料|木材|橡胶'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: categoryList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		productList	category(__no_group)--category;
+	}
+} depth=1; isRoot = false
+
+product{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('综合纸-A类-原料'), verb: false, required: true;
+		money	purchase_price('$100.414'), verb: false, required: true;
+		category	category('$(object)'), verb: false, required: true, referenceBy: productList;
+		merchant_warehouse	merchant_warehouse('$(object)'), verb: false, required: true, referenceBy: productList;
+		product_type	product_type('$(object)'), verb: false, required: true, referenceBy: productList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: productList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(4){
+		jobOrderList	product(__no_group)--product;
+		inventoryList	product(__no_group)--product;
+		stockInApplicationList	product(__no_group)--product;
+		stockOutApplicationList	product(__no_group)--product;
+	}
+} depth=5; isRoot = false
+
+inventory{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		product	product('$(object)'), verb: false, required: true, referenceBy: inventoryList;
+		merchant	merchant('$(object)'), verb: false, required: true, referenceBy: inventoryList;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: true, referenceBy: inventoryList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		inventoryRecordList	inventory(__no_group)--inventory;
+	}
+} depth=6; isRoot = false
+
+inventory_record{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('收购'), verb: false, required: true;
+		stock_type	stock_type('$(object)'), verb: false, required: true, referenceBy: inventoryRecordList;
+		user	operator('$(object)'), verb: false, required: true, referenceBy: inventoryRecordList;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		string	comments('出库备注'), verb: false, required: true;
+		inventory	inventory('$(object)'), verb: false, required: true, referenceBy: inventoryRecordList;
+		int	item_quantity_balance('10'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		string	refered_object_type('|buy-in-order'), verb: false, required: false;
+		string	refered_object_id('MO000001'), verb: false, required: true;
+		string_longtext	details('text()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+smart_scale{
+	fields(12){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('10吨地磅'), verb: false, required: true;
+		string	vendor('柯力'), verb: false, required: true;
+		string	type('D2008'), verb: false, required: true;
+		double	max_weight('200000000.000'), verb: false, required: true;
+		double	precision_weight('200000000.000'), verb: false, required: true;
+		merchant_warehouse	scale_location('$(object)'), verb: false, required: true, referenceBy: smartScaleList;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		iot_online_status	status('$(object)'), verb: false, required: true, referenceBy: smartScaleList;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: smartScaleList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderWeighRecordList	weigh_scale(__no_group)--weigh_scale;
+	}
+} depth=5; isRoot = false
+
+merchant_partner{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		string	seller_merchant_name('卖方商户名称'), verb: false, required: true;
+		string_china_mobile_phone	seller_mobile('13812341234'), verb: false, required: true;
+		string	seller_user_name('卖方联系人姓名'), verb: false, required: true;
+		string	buyer_merchant_name('买方商户名称'), verb: false, required: true;
+		string_china_mobile_phone	buyer_mobile('13812341234'), verb: false, required: true;
+		string	buyer_user_name('买方联系人姓名'), verb: false, required: true;
+		double	total_weight('200000000.000'), verb: false, required: true;
+		money	total_amount('$103000000.005'), verb: false, required: true;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		merchant	seller('$(object)'), verb: false, required: true, referenceBy: merchantPartnerListAsSeller;
+		merchant_warehouse	seller_warehouse('$(object)'), verb: false, required: false, referenceBy: merchantPartnerListAsSellerWarehouse;
+		merchant	buyer('$(object)'), verb: false, required: true, referenceBy: merchantPartnerListAsBuyer;
+		merchant_warehouse	buyer_warehouse('$(object)'), verb: false, required: false, referenceBy: merchantPartnerListAsBuyerWarehouse;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+job_order_next_step_info{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderNextStepInfoList;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: false, referenceBy: jobOrderNextStepInfoList;
+		role	role('$(object)'), verb: false, required: false, referenceBy: jobOrderNextStepInfoList;
+		user	handler('$(object)'), verb: false, required: false, referenceBy: jobOrderNextStepInfoList;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+main_order_next_step_info{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: mainOrderNextStepInfoList;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: false, referenceBy: mainOrderNextStepInfoList;
+		role	role('$(object)'), verb: false, required: false, referenceBy: mainOrderNextStepInfoList;
+		user	handler('$(object)'), verb: false, required: false, referenceBy: mainOrderNextStepInfoList;
+		date_time_now	create_datetime('now()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+common_event_record{
+	fields(11){
+		string	id('ABCD'), verb: false, required: true;
+		string	event_code('confirm_weight|order_closed'), verb: false, required: true;
+		string	title('核重完成|订单完成'), verb: false, required: true;
+		user	user('$(object)'), verb: false, required: false, referenceBy: commonEventRecordList;
+		string	key1('川A234w3'), verb: false, required: true;
+		string	key2('200.99KG'), verb: false, required: true;
+		string	key3('+8618865676543'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		string_longtext	details('text()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: commonEventRecordList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderOperationRecordList	source_event(__no_group)--source_event;
+	}
+} depth=3; isRoot = false
+
+original_evidence_record{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('定额发票|电子发票'), verb: false, required: true;
+		string	summary('工商银行电子汇票截图'), verb: false, required: true;
+		string_image	image_1('example.jpg'), verb: false, required: true;
+		string_image	image_2('example.jpg'), verb: false, required: true;
+		string_image	image_3('example.jpg'), verb: false, required: true;
+		payment	payment('$(object)'), verb: true, required: true, referenceBy: originalEvidenceRecordList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		string	current_status('PAID'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=6; isRoot = false
+
+current_working_warehouse{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		user	user('$(object)'), verb: false, required: true, referenceBy: currentWorkingWarehouseList;
+		merchant_warehouse	merchant_warehouse('$(object)'), verb: false, required: true, referenceBy: currentWorkingWarehouseList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+merchant_warehouse_stakeholder{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		merchant_warehouse	merchant_warehouse('$(object)'), verb: false, required: true, referenceBy: merchantWarehouseStakeholderList;
+		user	owner('$(object)'), verb: false, required: true, referenceBy: merchantWarehouseStakeholderList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+stock_in_application{
+	fields(9){
+		string	id('ABCD'), verb: false, required: true;
+		product	product('$(object)'), verb: false, required: true, referenceBy: stockInApplicationList;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: true, referenceBy: stockInApplicationList;
+		user	applicant('$(object)'), verb: false, required: true, referenceBy: stockInApplicationList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=6; isRoot = false
+
+stock_out_application{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		product	product('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		string	comments('出库批注'), verb: false, required: true;
+		merchant_warehouse	warehouse('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		merchant	buyer('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		string	vehicle('川AFCD234'), verb: false, required: true;
+		date_time	stock_out_datetime('2100-01-01T12:30:00'), verb: false, required: true;
+		user	applicant('$(object)'), verb: false, required: true, referenceBy: stockOutApplicationList;
+		string	driver_name('张小平'), verb: false, required: true;
+		string_china_mobile_phone	driver_mobile('13308188512'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		salesOrderList	stock_out(__no_group)--stock_out;
+	}
+} depth=6; isRoot = false
+
+sales_order{
+	fields(16){
+		string	id('ABCD'), verb: false, required: true;
+		stock_out_application	stock_out('$(object)'), verb: false, required: true, referenceBy: salesOrderList;
+		string	product('产品名称'), verb: false, required: true;
+		string	buyer('买家名称'), verb: false, required: true;
+		int	item_quantity('10'), verb: false, required: true;
+		int	weight_value('10'), verb: false, required: true;
+		money	unit_price('$103000000.005'), verb: false, required: true;
+		money	shipping_cost('$103000000.005'), verb: false, required: true;
+		int	adjust_weight('10'), verb: false, required: true;
+		money	account_receivable_amount('$103000000.005'), verb: false, required: true;
+		money	account_received_amount('$103000000.005'), verb: false, required: true;
+		bool	is_order_paid('false'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		string	comments('备注'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+main_order_price_info{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('货款'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		bool	discount('true|false'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: mainOrderPriceInfoList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+job_order_operation_record{
+	fields(7){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('创建'), verb: false, required: true;
+		string_longtext	details('text()'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderOperationRecordList;
+		common_event_record	source_event('$(object)'), verb: false, required: true, referenceBy: jobOrderOperationRecordList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+main_order_shipping{
+	fields(11){
+		string	id('ABCD'), verb: false, required: true;
+		main_order	main_order('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingList;
+		merchant_warehouse	ship_from('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsShipFrom;
+		merchant_warehouse	ship_to('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsShipTo;
+		user	recipient_employee('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsRecipientEmployee;
+		user	driver('$(object)'), verb: false, required: true, referenceBy: mainOrderShippingListAsDriver;
+		string	plate_number('川AFCD234'), verb: false, required: true;
+		double	shipping_cost('200000000.000'), verb: false, required: true;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=5; isRoot = false
+
+job_order_pricing{
+	fields(15){
+		string	id('ABCD'), verb: false, required: true;
+		string	pricing_comment('价格批注'), verb: false, required: true;
+		pricing_type	pricing_type('$(object)'), verb: false, required: true, referenceBy: jobOrderPricingList;
+		double	net_weight('200000000.000'), verb: false, required: true;
+		double	adjust_weight('-99999999.000'), verb: false, required: true;
+		double	final_weight('200000000.000'), verb: false, required: true;
+		money	unit_price('$10300.005'), verb: false, required: true;
+		money	adjust_price('$103000000.005'), verb: false, required: true;
+		money	final_price('$103000000.005'), verb: false, required: true;
+		money	amount('$103000000.005'), verb: false, required: true;
+		job_order	job_order('$(object)'), verb: false, required: true, referenceBy: jobOrderPricingList;
+		user	pricing_employee('$(object)'), verb: false, required: true, referenceBy: jobOrderPricingList;
+		date_time_create	create_time('createTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=7; isRoot = false
+
+user_status{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('正常|关闭'), verb: false, required: true;
+		string	code('normal|closed'), verb: false, required: true;
+		string	description('正常|关闭'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: userStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		userList	user_status(__no_group)--user_status;
+	}
+} depth=1; isRoot = false
+
+merchant_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('回收站|打包厂|上游客户|司机'), verb: false, required: true;
+		string	code('RecycleStation|PacakgingFactory|UpperCustomer|Driver'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: merchantTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		merchantList	merchant_type(__no_group)--merchant_type;
+	}
+} depth=1; isRoot = false
+
+merchant_status{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('营业中|已关闭|已停运'), verb: false, required: true;
+		string	code('running|closed|terminated'), verb: false, required: true;
+		string	description('正常营业中|暂时停止营业,例如下班或者假期|终止运营,例如合同到期,倒闭,被封等'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: merchantStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		merchantList	merchant_status(__no_group)--merchant_status;
+	}
+} depth=1; isRoot = false
+
+role{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('定价员|核价员|称重员|财务|站长'), verb: false, required: true;
+		string	code('PriceMaker|PriceAuditor|Weigh|Finance|StationHeader'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: roleList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(3){
+		employeeAssignmentList	role(__no_group)--role;
+		jobOrderNextStepInfoList	role(__no_group)--role;
+		mainOrderNextStepInfoList	role(__no_group)--role;
+	}
+} depth=1; isRoot = false
+
+stock_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('入库|出库'), verb: false, required: true;
+		string	code('StockIn|StockOut'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: stockTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		inventoryRecordList	stock_type(__no_group)--stock_type;
+	}
+} depth=1; isRoot = false
+
+product_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('原料|成品'), verb: false, required: true;
+		string	code('Material|Goods'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: productTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		productList	product_type(__no_group)--product_type;
+	}
+} depth=1; isRoot = false
+
+order_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('处理中|待支付|支付中|已完成|已取消'), verb: false, required: true;
+		string	code('NotReady|PendingPay|Paying|Completed|Cancelled'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: orderStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		mainOrderList	status(__no_group)--status;
+	}
+} depth=1; isRoot = false
+
+job_order_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('待称毛重|待确认毛重|待卸货|待称皮重|待确认皮重|待定价|待确认|已完成|已取消'), verb: false, required: true;
+		string	code('NeedGrossWeight|NeedConfirmGrossWeight|NeedUnload|NeedTareWeight|NeedConfirmTareWeight|NeedPricing|NeedConfirm|Closed|Cancelled'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: jobOrderStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderList	status(__no_group)--status;
+	}
+} depth=1; isRoot = false
+
+pricing_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('定价|核价'), verb: false, required: true;
+		string	code('PriceMake|PriceAudit'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: pricingTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderPricingList	pricing_type(__no_group)--pricing_type;
+	}
+} depth=1; isRoot = false
+
+weigh_type{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('称毛重|称皮重'), verb: false, required: true;
+		string	code('GrossWeight|TareWeight'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: weighTypeList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		jobOrderWeighRecordList	weigh_type(__no_group)--weigh_type;
+	}
+} depth=1; isRoot = false
+
+iot_online_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('离线|在线'), verb: false, required: true;
+		string	code('offline|online'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: iotOnlineStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		smartScaleList	status(__no_group)--status;
+	}
+} depth=1; isRoot = false
+
+payment_status{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('待支付|支付中|已支付|已取消|已失败|已冻结'), verb: false, required: true;
+		string	code('UnPaid|Paying|Paid|Cancelled|Failed|Frozen'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: paymentStatusList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		paymentList	payment_status(__no_group)--payment_status;
+	}
+} depth=1; isRoot = false
+
+payment_option{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('余额|微信APP|微信WEB|微信扫码|支付宝|银联'), verb: false, required: true;
+		string	code('Balance|WechatApp|WechatWeb|WechatNative|AliPay|UnionPay'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: paymentOptionList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+user_domain{
+	fields(3){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('用户区域'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(2){
+		userWhiteListList	domain(__no_group)--domain;
+		secUserList	domain(__no_group)--domain;
+	}
+} depth=0; isRoot = true
+
+user_white_list{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	user_identity('clariones|13808188512'), verb: false, required: true;
+		string	user_special_functions('tester;ios-spokesperson'), verb: false, required: true;
+		user_domain	domain('$(object)'), verb: false, required: true, referenceBy: userWhiteListList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+sec_user{
+	fields(15){
+		string	id('ABCD'), verb: false, required: true;
+		string	login('login'), verb: false, required: true;
+		string_china_mobile_phone	mobile('13900000001'), verb: false, required: true;
+		string	email('|suddy_chang@163.com'), verb: false, required: false;
+		string_password	pwd('*******'), verb: false, required: true;
+		string	weixin_openid('wx123456789abcdefghijklmn'), verb: false, required: true;
+		string	weixin_appid('wxapp12098410239840'), verb: false, required: true;
+		string	access_token('jwt_token_12345678'), verb: false, required: true;
+		int	verification_code('0|9999999'), verb: false, required: true;
+		date_time	verification_code_expire('2099-12-31T09:09:09'), verb: false, required: true;
+		date_time	last_login_time('2099-12-31T09:09:09'), verb: false, required: true;
+		user_domain	domain('$(object)'), verb: false, required: true, referenceBy: secUserList;
+		sec_user_blocking	blocking('$(object)'), verb: true, required: true, referenceBy: secUserList;
+		string	current_status('BLOCKED'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(2){
+		userAppList	sec_user(__no_group)--sec_user;
+		loginHistoryList	sec_user(__no_group)--sec_user;
+	}
+} depth=1; isRoot = false
+
+sec_user_blocking{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	who('currentUser()'), verb: false, required: true;
+		date_time_create	block_time('createTime()'), verb: false, required: true;
+		string	comments('这个用户多次发送违反社区的帖子，现在把他给屏蔽了'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		secUserList	blocking(__no_group)--blocking;
+	}
+} depth=0; isRoot = true
+
+user_app{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('审车平台|账户管理|接车公司|审车公司|维修公司|顾客'), verb: false, required: true;
+		sec_user	sec_user('$(object)'), verb: false, required: true, referenceBy: userAppList;
+		string	app_icon('users|bank|wechat|bar-chart|user|users'), verb: false, required: true;
+		bool	full_access('true'), verb: false, required: true;
+		string	permission('MXWR|MXWR'), verb: false, required: true;
+		string	object_type('CarInspectionPlatform|UserDomain|CarReceivingServiceCompany|CarInspectionServiceCompany|CarRepairingServiceCompany|CustomerInfo'), verb: false, required: true;
+		string	object_id('CIP000001|UD000001|CRSC000001|CISC000001|CRSC000001|CI000001'), verb: false, required: true;
+		string	location('/link/to/app'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(2){
+		listAccessList	app(__no_group)--app;
+		objectAccessList	app(__no_group)--app;
+	}
+} depth=2; isRoot = false
+
+list_access{
+	fields(10){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('列表'), verb: false, required: true;
+		string	internal_name('levelOneCategoryList'), verb: false, required: true;
+		bool	read_permission('true'), verb: false, required: true;
+		bool	create_permission('true'), verb: false, required: true;
+		bool	delete_permission('true'), verb: false, required: true;
+		bool	update_permission('true'), verb: false, required: true;
+		bool	execution_permission('true'), verb: false, required: true;
+		user_app	app('$(object)'), verb: false, required: true, referenceBy: listAccessList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=3; isRoot = false
+
+object_access{
+	fields(14){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('控制访问列表1'), verb: false, required: true;
+		string	object_type('FranchiseeStoreCountryCenter|AccountSet'), verb: false, required: true;
+		string	list1('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list2('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list3('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list4('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list5('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list6('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list7('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list8('catalogList|levelOneCategoryList'), verb: false, required: true;
+		string	list9('catalogList|levelOneCategoryList'), verb: false, required: true;
+		user_app	app('$(object)'), verb: false, required: true, referenceBy: objectAccessList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=3; isRoot = false
+
+login_history{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		date_time_create	login_time('createTime()'), verb: false, required: true;
+		string	from_ip('192.168.1.1|192.168.1.2'), verb: false, required: true;
+		string	description('登陆成功'), verb: false, required: true;
+		sec_user	sec_user('$(object)'), verb: false, required: true, referenceBy: loginHistoryList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=2; isRoot = false
+
+generic_form{
+	fields(4){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('登记输入单'), verb: false, required: true;
+		string	description('姓名就是你身份证上的名字'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(4){
+		formMessageList	form(__no_group)--form;
+		formFieldMessageList	form(__no_group)--form;
+		formFieldList	form(__no_group)--form;
+		formActionList	form(__no_group)--form;
+	}
+} depth=0; isRoot = true
+
+form_message{
+	fields(5){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('字段组合错误'), verb: false, required: true;
+		generic_form	form('$(object)'), verb: false, required: true, referenceBy: formMessageList;
+		string	level('success|info|warning|danger'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+form_field_message{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	title('输入错误'), verb: false, required: true;
+		string	parameter_name('name'), verb: false, required: true;
+		generic_form	form('$(object)'), verb: false, required: true, referenceBy: formFieldMessageList;
+		string	level('success|info|warning|danger'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+form_field{
+	fields(18){
+		string	id('ABCD'), verb: false, required: true;
+		string	label('姓名|年龄|出生地|国籍'), verb: false, required: true;
+		string	locale_key('name|age|birth_place|country'), verb: false, required: true;
+		string	parameter_name('name'), verb: false, required: true;
+		string	type('text|longtext|date|date_time|money|url|image|password|number|switch|vcode'), verb: false, required: true;
+		generic_form	form('$(object)'), verb: false, required: true, referenceBy: formFieldList;
+		string	placeholder('姓名就是你身份证上的名字'), verb: false, required: true;
+		string	default_value('李一一'), verb: false, required: true;
+		string	description('姓名就是你身份证上的名字'), verb: false, required: true;
+		string	field_group('基础信息|扩展信息'), verb: false, required: true;
+		string	minimum_value('maybe any value'), verb: false, required: true;
+		string	maximum_value('a value expression'), verb: false, required: true;
+		bool	required('true|false'), verb: false, required: true;
+		bool	disabled('true|false'), verb: false, required: true;
+		bool	custom_rendering('false'), verb: false, required: true;
+		string	candidate_values('|||男,女|高,矮'), verb: false, required: false;
+		string	suggest_values('|||男,女|高,矮'), verb: false, required: false;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+form_action{
+	fields(8){
+		string	id('ABCD'), verb: false, required: true;
+		string	label('功能'), verb: false, required: true;
+		string	locale_key('name'), verb: false, required: true;
+		string	action_key('save|update|remove'), verb: false, required: true;
+		string	level('default|warning|danger|primary'), verb: false, required: true;
+		string	url('genericFormManager/name/name0002/name0003/'), verb: false, required: true;
+		generic_form	form('$(object)'), verb: false, required: true, referenceBy: formActionList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+candidate_container{
+	fields(3){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('我只是一个容器'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(1){
+		candidateElementList	container(__no_group)--container;
+	}
+} depth=0; isRoot = true
+
+candidate_element{
+	fields(6){
+		string	id('ABCD'), verb: false, required: true;
+		string	name('搜索到的匹配字段'), verb: false, required: true;
+		string	type('类型描述'), verb: false, required: true;
+		string_image	image('1.jpg'), verb: false, required: true;
+		candidate_container	container('$(object)'), verb: false, required: true, referenceBy: candidateElementList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=1; isRoot = false
+
+
+
+
+=================================End Report=================================
